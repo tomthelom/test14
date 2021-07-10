@@ -19,8 +19,12 @@
     <form action="">
       <input id="m" autocomplete="off" /><button>Send</button>
     </form>
-    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
-    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="https://cdn.socket.io/4.1.2/socket.io.min.js"
+            integrity="sha256-crRzk/tlAssAtFB2iE3/ieE1DgXDrc9lW+3rvBM1Wqc="
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
     <script>
       $(function () {
         var socket = io({transports: ['websocket'], upgrade: false});
